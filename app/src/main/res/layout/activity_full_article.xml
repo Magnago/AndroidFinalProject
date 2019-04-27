@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/nyToolbarHelp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greenBack"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        />
+
+    <TextView
+        android:id="@+id/news_title_detailed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_below="@id/nyToolbarHelp2"/>
+
+    <TextView
+        android:layout_marginTop="23dp"
+        android:id="@+id/news_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_title_detailed"
+         />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nyArticleLink"
+        android:autoLink="web"
+        android:layout_below="@id/news_body"/>
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="380dp"
+        android:minHeight="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/nyImageArticle"
+        android:layout_gravity="center"
+        android:layout_below="@id/nyArticleLink"
+
+        />
+
+    <Button
+        android:id="@+id/nyButtonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nyButtonSave"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
